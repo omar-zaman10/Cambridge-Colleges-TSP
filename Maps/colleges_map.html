@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_75afdbb25116a76614e74c0a28a45a37 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_75afdbb25116a76614e74c0a28a45a37" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_75afdbb25116a76614e74c0a28a45a37 = L.map(
+                "map_75afdbb25116a76614e74c0a28a45a37",
+                {
+                    center: [52.2069577, 0.1130816],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_68f59162728ef9be582d3ee46b74256a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var marker_045079b38eb3a71fe05b7256da16eab4 = L.marker(
+                [0.0, 1.0],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_b90b74f93dfe444c0450fdcd62c61e5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_045079b38eb3a71fe05b7256da16eab4.setIcon(icon_b90b74f93dfe444c0450fdcd62c61e5d);
+        
+    
+        var popup_6f60f71a75357bd6e19fcaf552e391b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ea10f4906c265851aa6c231e17b1d34 = $(`<div id="html_2ea10f4906c265851aa6c231e17b1d34" style="width: 100.0%; height: 100.0%;">Unnamed: 0</div>`)[0];
+                popup_6f60f71a75357bd6e19fcaf552e391b1.setContent(html_2ea10f4906c265851aa6c231e17b1d34);
+            
+        
+
+        marker_045079b38eb3a71fe05b7256da16eab4.bindPopup(popup_6f60f71a75357bd6e19fcaf552e391b1)
+        ;
+
+        
+    
+    
+            var marker_ee22163ddeb63062bea24ff5482f8bf5 = L.marker(
+                [52.206230600000005, 0.1224627],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_6f3f9e0d2a1c9ffa1932742bd4566c79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ee22163ddeb63062bea24ff5482f8bf5.setIcon(icon_6f3f9e0d2a1c9ffa1932742bd4566c79);
+        
+    
+        var popup_fbea7073ab40d33317019cba93d7a687 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d916dfdfe038f8aacf7278174f15b420 = $(`<div id="html_d916dfdfe038f8aacf7278174f15b420" style="width: 100.0%; height: 100.0%;">Christs College Cambridge</div>`)[0];
+                popup_fbea7073ab40d33317019cba93d7a687.setContent(html_d916dfdfe038f8aacf7278174f15b420);
+            
+        
+
+        marker_ee22163ddeb63062bea24ff5482f8bf5.bindPopup(popup_fbea7073ab40d33317019cba93d7a687)
+        ;
+
+        
+    
+    
+            var marker_acaf0f881039e26c31148ddbb1d424ce = L.marker(
+                [52.21253489999999, 0.10409890000000001],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_80be729d19a897af046ca37f09b07464 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_acaf0f881039e26c31148ddbb1d424ce.setIcon(icon_80be729d19a897af046ca37f09b07464);
+        
+    
+        var popup_84b2d32b26dd3f4b709bec2c55a6ebaf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_531a7122346306b47d31cfa1f458c9b3 = $(`<div id="html_531a7122346306b47d31cfa1f458c9b3" style="width: 100.0%; height: 100.0%;">Churchill College Cambridge</div>`)[0];
+                popup_84b2d32b26dd3f4b709bec2c55a6ebaf.setContent(html_531a7122346306b47d31cfa1f458c9b3);
+            
+        
+
+        marker_acaf0f881039e26c31148ddbb1d424ce.bindPopup(popup_84b2d32b26dd3f4b709bec2c55a6ebaf)
+        ;
+
+        
+    
+    
+            var marker_1f0d2bb043313a0cc4a19bd614b5a001 = L.marker(
+                [52.2050655, 0.11519549999999999],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_0c1db066a8e46b6f99ef16fa076e863f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1f0d2bb043313a0cc4a19bd614b5a001.setIcon(icon_0c1db066a8e46b6f99ef16fa076e863f);
+        
+    
+        var popup_0c25e2a1ba713752780e133f6f9dd68f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e98138cb86ed7e7f7e175dec1301d8e = $(`<div id="html_9e98138cb86ed7e7f7e175dec1301d8e" style="width: 100.0%; height: 100.0%;">Clare College Cambridge</div>`)[0];
+                popup_0c25e2a1ba713752780e133f6f9dd68f.setContent(html_9e98138cb86ed7e7f7e175dec1301d8e);
+            
+        
+
+        marker_1f0d2bb043313a0cc4a19bd614b5a001.bindPopup(popup_0c25e2a1ba713752780e133f6f9dd68f)
+        ;
+
+        
+    
+    
+            var marker_d3ccd10b54947eeb5fdc567ad5f7a654 = L.marker(
+                [52.204266499999996, 0.1043751],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_c1adbd3a3c526c01df6704ffc8d83185 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d3ccd10b54947eeb5fdc567ad5f7a654.setIcon(icon_c1adbd3a3c526c01df6704ffc8d83185);
+        
+    
+        var popup_06dc7b25a096c040832f222685c24224 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c6fab92b0bb15e3a792370f423b94c7 = $(`<div id="html_8c6fab92b0bb15e3a792370f423b94c7" style="width: 100.0%; height: 100.0%;">Clare Hall Cambridge</div>`)[0];
+                popup_06dc7b25a096c040832f222685c24224.setContent(html_8c6fab92b0bb15e3a792370f423b94c7);
+            
+        
+
+        marker_d3ccd10b54947eeb5fdc567ad5f7a654.bindPopup(popup_06dc7b25a096c040832f222685c24224)
+        ;
+
+        
+    
+    
+            var marker_225ba00f973722d0a7ee3bebd7abe729 = L.marker(
+                [52.2028667, 0.117875],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_6e11fe290d363d42a8c56b437ce75021 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_225ba00f973722d0a7ee3bebd7abe729.setIcon(icon_6e11fe290d363d42a8c56b437ce75021);
+        
+    
+        var popup_371a72f6dd8123b7acf9d5b2d10d548b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11f46a02e6142e95f641627355705d4b = $(`<div id="html_11f46a02e6142e95f641627355705d4b" style="width: 100.0%; height: 100.0%;">Corpus Christi College Cambridge</div>`)[0];
+                popup_371a72f6dd8123b7acf9d5b2d10d548b.setContent(html_11f46a02e6142e95f641627355705d4b);
+            
+        
+
+        marker_225ba00f973722d0a7ee3bebd7abe729.bindPopup(popup_371a72f6dd8123b7acf9d5b2d10d548b)
+        ;
+
+        
+    
+    
+            var marker_87d9538ae579a55c6a2fb393710ccf83 = L.marker(
+                [52.200570299999995, 0.11359169999999999],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_ad847358e75d8984c22b873e0964a622 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_87d9538ae579a55c6a2fb393710ccf83.setIcon(icon_ad847358e75d8984c22b873e0964a622);
+        
+    
+        var popup_93e8bb87f9d787513dad1f1f657d0917 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91b920b7fd3d9ac00eee35f766c8f935 = $(`<div id="html_91b920b7fd3d9ac00eee35f766c8f935" style="width: 100.0%; height: 100.0%;">Darwin College Cambridge</div>`)[0];
+                popup_93e8bb87f9d787513dad1f1f657d0917.setContent(html_91b920b7fd3d9ac00eee35f766c8f935);
+            
+        
+
+        marker_87d9538ae579a55c6a2fb393710ccf83.bindPopup(popup_93e8bb87f9d787513dad1f1f657d0917)
+        ;
+
+        
+    
+    
+            var marker_a7f0d3bb107b27a04469054cbe87f091 = L.marker(
+                [52.201166799999996, 0.12457830000000002],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_1c4e81a1d1d023f3eb3b9fe376d86ced = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a7f0d3bb107b27a04469054cbe87f091.setIcon(icon_1c4e81a1d1d023f3eb3b9fe376d86ced);
+        
+    
+        var popup_256370ff897daaebb4f00591a85e7a71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98a19f9629e4d56498bf9e09b09b8250 = $(`<div id="html_98a19f9629e4d56498bf9e09b09b8250" style="width: 100.0%; height: 100.0%;">Downing College Cambridge</div>`)[0];
+                popup_256370ff897daaebb4f00591a85e7a71.setContent(html_98a19f9629e4d56498bf9e09b09b8250);
+            
+        
+
+        marker_a7f0d3bb107b27a04469054cbe87f091.bindPopup(popup_256370ff897daaebb4f00591a85e7a71)
+        ;
+
+        
+    
+    
+            var marker_a4cea12ce61da7d30577924977b94043 = L.marker(
+                [52.20359860000001, 0.12370070000000001],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_f9dc803b07d9d85381e6577248f361a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a4cea12ce61da7d30577924977b94043.setIcon(icon_f9dc803b07d9d85381e6577248f361a4);
+        
+    
+        var popup_d1eca603963fb16364e9b82d19f8e757 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0d3eb7ea5612ed8e57ae76bab12d718 = $(`<div id="html_f0d3eb7ea5612ed8e57ae76bab12d718" style="width: 100.0%; height: 100.0%;">Emmanuel College Cambridge</div>`)[0];
+                popup_d1eca603963fb16364e9b82d19f8e757.setContent(html_f0d3eb7ea5612ed8e57ae76bab12d718);
+            
+        
+
+        marker_a4cea12ce61da7d30577924977b94043.bindPopup(popup_d1eca603963fb16364e9b82d19f8e757)
+        ;
+
+        
+    
+    
+            var marker_2b4ad734f03da846e933c951e538df12 = L.marker(
+                [52.214308200000005, 0.1048307],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_202887c1dd0ac8c1ad1a6b3e2903e41a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2b4ad734f03da846e933c951e538df12.setIcon(icon_202887c1dd0ac8c1ad1a6b3e2903e41a);
+        
+    
+        var popup_3901e7d9ff45cb5a138b104404c1e48c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_025079778151753cdd93e2b13d725bf1 = $(`<div id="html_025079778151753cdd93e2b13d725bf1" style="width: 100.0%; height: 100.0%;">Fitzwilliam College Cambridge</div>`)[0];
+                popup_3901e7d9ff45cb5a138b104404c1e48c.setContent(html_025079778151753cdd93e2b13d725bf1);
+            
+        
+
+        marker_2b4ad734f03da846e933c951e538df12.bindPopup(popup_3901e7d9ff45cb5a138b104404c1e48c)
+        ;
+
+        
+    
+    
+            var marker_710724c44aa11b02beda992bad7a9f11 = L.marker(
+                [52.228384600000005, 0.08362359999999999],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_6f3690908fe8078ced543e29867b2f99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_710724c44aa11b02beda992bad7a9f11.setIcon(icon_6f3690908fe8078ced543e29867b2f99);
+        
+    
+        var popup_b446a122f98f0c771449c1ede5e9375f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd3f68a05c3ab5204e86c42e71158ca7 = $(`<div id="html_dd3f68a05c3ab5204e86c42e71158ca7" style="width: 100.0%; height: 100.0%;">Girton College Cambridge</div>`)[0];
+                popup_b446a122f98f0c771449c1ede5e9375f.setContent(html_dd3f68a05c3ab5204e86c42e71158ca7);
+            
+        
+
+        marker_710724c44aa11b02beda992bad7a9f11.bindPopup(popup_b446a122f98f0c771449c1ede5e9375f)
+        ;
+
+        
+    
+    
+            var marker_5f7a1cddcd720a4b76d6c6123333b2dc = L.marker(
+                [52.2056814, 0.11781580000000001],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_22e9ce2fe307ec69a272413c630073ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5f7a1cddcd720a4b76d6c6123333b2dc.setIcon(icon_22e9ce2fe307ec69a272413c630073ab);
+        
+    
+        var popup_e69a30968c60b4a7170481fec9413fc8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93ac53ab2ec74d8926277609e18b8b73 = $(`<div id="html_93ac53ab2ec74d8926277609e18b8b73" style="width: 100.0%; height: 100.0%;">Gonville and Caius College Cambridge</div>`)[0];
+                popup_e69a30968c60b4a7170481fec9413fc8.setContent(html_93ac53ab2ec74d8926277609e18b8b73);
+            
+        
+
+        marker_5f7a1cddcd720a4b76d6c6123333b2dc.bindPopup(popup_e69a30968c60b4a7170481fec9413fc8)
+        ;
+
+        
+    
+    
+            var marker_504eb7d3dfa31940e57afe313200434f = L.marker(
+                [52.1854027, 0.1351898],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_f0dbfc02eced689db68a8fc6a77a8d35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_504eb7d3dfa31940e57afe313200434f.setIcon(icon_f0dbfc02eced689db68a8fc6a77a8d35);
+        
+    
+        var popup_9d19ab0e028657f462802f5b63218257 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a689d497f12b27c54fd4c0139ecc689 = $(`<div id="html_4a689d497f12b27c54fd4c0139ecc689" style="width: 100.0%; height: 100.0%;">Homerton College Cambridge</div>`)[0];
+                popup_9d19ab0e028657f462802f5b63218257.setContent(html_4a689d497f12b27c54fd4c0139ecc689);
+            
+        
+
+        marker_504eb7d3dfa31940e57afe313200434f.bindPopup(popup_9d19ab0e028657f462802f5b63218257)
+        ;
+
+        
+    
+    
+            var marker_aa5ff62e46111b9e947acd773ad6090d = L.marker(
+                [52.20088, 0.1317527],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_40dda056ef9a752f6e729ba60e7a6c39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aa5ff62e46111b9e947acd773ad6090d.setIcon(icon_40dda056ef9a752f6e729ba60e7a6c39);
+        
+    
+        var popup_f40a31db5c79d672b5ceddb3657ffcd8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8b62bf4d7692f393b25e04a03fd7db9 = $(`<div id="html_f8b62bf4d7692f393b25e04a03fd7db9" style="width: 100.0%; height: 100.0%;">Hughes Hall Cambridge</div>`)[0];
+                popup_f40a31db5c79d672b5ceddb3657ffcd8.setContent(html_f8b62bf4d7692f393b25e04a03fd7db9);
+            
+        
+
+        marker_aa5ff62e46111b9e947acd773ad6090d.bindPopup(popup_f40a31db5c79d672b5ceddb3657ffcd8)
+        ;
+
+        
+    
+    
+            var marker_001303f90a8fa070d55882b5167f4f89 = L.marker(
+                [52.20947520000001, 0.1238309],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_807c2f56122536631509c70141451e53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_001303f90a8fa070d55882b5167f4f89.setIcon(icon_807c2f56122536631509c70141451e53);
+        
+    
+        var popup_64ea6d0ed32dd56d00a820b8a666a476 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68233201221f8c957bc70203753eba21 = $(`<div id="html_68233201221f8c957bc70203753eba21" style="width: 100.0%; height: 100.0%;">Jesus College Cambridge</div>`)[0];
+                popup_64ea6d0ed32dd56d00a820b8a666a476.setContent(html_68233201221f8c957bc70203753eba21);
+            
+        
+
+        marker_001303f90a8fa070d55882b5167f4f89.bindPopup(popup_64ea6d0ed32dd56d00a820b8a666a476)
+        ;
+
+        
+    
+    
+            var marker_5293333c5fc4d15dd27d437e0e445975 = L.marker(
+                [52.2043636, 0.1172411],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_b3417446ec9de226d98590569d967704 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5293333c5fc4d15dd27d437e0e445975.setIcon(icon_b3417446ec9de226d98590569d967704);
+        
+    
+        var popup_c2181d8a2217b447c5af4c36d2a41435 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90069b2c27ec469525d174835ba7dfbf = $(`<div id="html_90069b2c27ec469525d174835ba7dfbf" style="width: 100.0%; height: 100.0%;">Kings College Cambridge</div>`)[0];
+                popup_c2181d8a2217b447c5af4c36d2a41435.setContent(html_90069b2c27ec469525d174835ba7dfbf);
+            
+        
+
+        marker_5293333c5fc4d15dd27d437e0e445975.bindPopup(popup_c2181d8a2217b447c5af4c36d2a41435)
+        ;
+
+        
+    
+    
+            var marker_aa6e2f16240bf1da9201d313b25753d1 = L.marker(
+                [52.2111366, 0.1101413],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_89e50e94788493d5f8d1fa3998340c0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aa6e2f16240bf1da9201d313b25753d1.setIcon(icon_89e50e94788493d5f8d1fa3998340c0e);
+        
+    
+        var popup_ff40ae72b4f9f59d6e783391b82454f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cfd4569fd9245f96400e6c547fa42152 = $(`<div id="html_cfd4569fd9245f96400e6c547fa42152" style="width: 100.0%; height: 100.0%;">Lucy Cavendish College Cambridge</div>`)[0];
+                popup_ff40ae72b4f9f59d6e783391b82454f0.setContent(html_cfd4569fd9245f96400e6c547fa42152);
+            
+        
+
+        marker_aa6e2f16240bf1da9201d313b25753d1.bindPopup(popup_ff40ae72b4f9f59d6e783391b82454f0)
+        ;
+
+        
+    
+    
+            var marker_c3f4a2a9d4fa012207c41fe6c8e3ad44 = L.marker(
+                [52.2110336, 0.11611410000000001],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_6d2f776ecc1d725fb4f5765e2c3394c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c3f4a2a9d4fa012207c41fe6c8e3ad44.setIcon(icon_6d2f776ecc1d725fb4f5765e2c3394c9);
+        
+    
+        var popup_4e452f7397bf9a79a317a86482b7eda6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eca79b0d566f7fdc62340c332aba6438 = $(`<div id="html_eca79b0d566f7fdc62340c332aba6438" style="width: 100.0%; height: 100.0%;">Magdalene College Cambridge</div>`)[0];
+                popup_4e452f7397bf9a79a317a86482b7eda6.setContent(html_eca79b0d566f7fdc62340c332aba6438);
+            
+        
+
+        marker_c3f4a2a9d4fa012207c41fe6c8e3ad44.bindPopup(popup_4e452f7397bf9a79a317a86482b7eda6)
+        ;
+
+        
+    
+    
+            var marker_c3f1533f8f19f39d02c8a7e3f3247c2c = L.marker(
+                [52.2142184, 0.10864589999999999],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_26561caa936c623807941fcdbf391c3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c3f1533f8f19f39d02c8a7e3f3247c2c.setIcon(icon_26561caa936c623807941fcdbf391c3d);
+        
+    
+        var popup_01ebb6fab064c1b2b8789ab47451e998 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eeb32027ceeb81e60d9a38588a60bdc3 = $(`<div id="html_eeb32027ceeb81e60d9a38588a60bdc3" style="width: 100.0%; height: 100.0%;">Murray Edwards College Cambridge</div>`)[0];
+                popup_01ebb6fab064c1b2b8789ab47451e998.setContent(html_eeb32027ceeb81e60d9a38588a60bdc3);
+            
+        
+
+        marker_c3f1533f8f19f39d02c8a7e3f3247c2c.bindPopup(popup_01ebb6fab064c1b2b8789ab47451e998)
+        ;
+
+        
+    
+    
+            var marker_4eacb31a81ab8ec90aa474043de02eeb = L.marker(
+                [52.19968799999999, 0.10785299999999999],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_c45ea8433dfb5b5f7850f2e0b8056b04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4eacb31a81ab8ec90aa474043de02eeb.setIcon(icon_c45ea8433dfb5b5f7850f2e0b8056b04);
+        
+    
+        var popup_bf55adff104461c139d226064b1b47be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0739e0fa4f23a73a63dc788fe8a28c32 = $(`<div id="html_0739e0fa4f23a73a63dc788fe8a28c32" style="width: 100.0%; height: 100.0%;">Newnham College Cambridge</div>`)[0];
+                popup_bf55adff104461c139d226064b1b47be.setContent(html_0739e0fa4f23a73a63dc788fe8a28c32);
+            
+        
+
+        marker_4eacb31a81ab8ec90aa474043de02eeb.bindPopup(popup_bf55adff104461c139d226064b1b47be)
+        ;
+
+        
+    
+    
+            var marker_fa517a7aaac08aa4175b79cad34738de = L.marker(
+                [52.201727399999996, 0.11832069999999999],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_2ea4c6c7c6199309d849a8d9ce031aa3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fa517a7aaac08aa4175b79cad34738de.setIcon(icon_2ea4c6c7c6199309d849a8d9ce031aa3);
+        
+    
+        var popup_4a3d1b194837c863ec0546ec0fec73b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_359ab82466127eab8dfac903bb1b5dd1 = $(`<div id="html_359ab82466127eab8dfac903bb1b5dd1" style="width: 100.0%; height: 100.0%;">Pembroke College Cambridge</div>`)[0];
+                popup_4a3d1b194837c863ec0546ec0fec73b1.setContent(html_359ab82466127eab8dfac903bb1b5dd1);
+            
+        
+
+        marker_fa517a7aaac08aa4175b79cad34738de.bindPopup(popup_4a3d1b194837c863ec0546ec0fec73b1)
+        ;
+
+        
+    
+    
+            var marker_536af0c7ad6a718dc5993f624ef21514 = L.marker(
+                [52.1998472, 0.1188507],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_97121448c4ee2e471399c98a5e1cfd8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_536af0c7ad6a718dc5993f624ef21514.setIcon(icon_97121448c4ee2e471399c98a5e1cfd8b);
+        
+    
+        var popup_f46bf75cb867301a596ea40204109ebb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b46602cca02ca9c7c30f04059c8d4116 = $(`<div id="html_b46602cca02ca9c7c30f04059c8d4116" style="width: 100.0%; height: 100.0%;">Peterhouse Cambridge</div>`)[0];
+                popup_f46bf75cb867301a596ea40204109ebb.setContent(html_b46602cca02ca9c7c30f04059c8d4116);
+            
+        
+
+        marker_536af0c7ad6a718dc5993f624ef21514.bindPopup(popup_f46bf75cb867301a596ea40204109ebb)
+        ;
+
+        
+    
+    
+            var marker_a4ea647034653f21e1cfbd5f112c9f07 = L.marker(
+                [52.20160550000001, 0.11488989999999999],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_9c9aa7c17803fea771f59aab4e62c38e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a4ea647034653f21e1cfbd5f112c9f07.setIcon(icon_9c9aa7c17803fea771f59aab4e62c38e);
+        
+    
+        var popup_c7d72ca7123faed4e14694678a583858 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14fea37f15f4820f21678f0708646ab1 = $(`<div id="html_14fea37f15f4820f21678f0708646ab1" style="width: 100.0%; height: 100.0%;">Queens College Cambridge</div>`)[0];
+                popup_c7d72ca7123faed4e14694678a583858.setContent(html_14fea37f15f4820f21678f0708646ab1);
+            
+        
+
+        marker_a4ea647034653f21e1cfbd5f112c9f07.bindPopup(popup_c7d72ca7123faed4e14694678a583858)
+        ;
+
+        
+    
+    
+            var marker_af09fd2b09fcd16345f617532def98c3 = L.marker(
+                [52.205425700000006, 0.10320630000000001],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_557222ad1c5f6eb10863b8aaa5212616 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_af09fd2b09fcd16345f617532def98c3.setIcon(icon_557222ad1c5f6eb10863b8aaa5212616);
+        
+    
+        var popup_ae1d68f318f0b53b0c733fd4f5b13ee4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0dac3884e62d8eff1655b341de4e0014 = $(`<div id="html_0dac3884e62d8eff1655b341de4e0014" style="width: 100.0%; height: 100.0%;">Robinson College Cambridge</div>`)[0];
+                popup_ae1d68f318f0b53b0c733fd4f5b13ee4.setContent(html_0dac3884e62d8eff1655b341de4e0014);
+            
+        
+
+        marker_af09fd2b09fcd16345f617532def98c3.bindPopup(popup_ae1d68f318f0b53b0c733fd4f5b13ee4)
+        ;
+
+        
+    
+    
+            var marker_75b1fd5fa6ef9f385ed3074bec80cc8b = L.marker(
+                [52.2010511, 0.1056297],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_2783670134ad666fe2cf9775c27a54c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_75b1fd5fa6ef9f385ed3074bec80cc8b.setIcon(icon_2783670134ad666fe2cf9775c27a54c4);
+        
+    
+        var popup_f22456bc43f800af31c0ee3673bdb65e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c07c9cd51c32301c459834a9d025976 = $(`<div id="html_6c07c9cd51c32301c459834a9d025976" style="width: 100.0%; height: 100.0%;">Selwyn College Cambridge</div>`)[0];
+                popup_f22456bc43f800af31c0ee3673bdb65e.setContent(html_6c07c9cd51c32301c459834a9d025976);
+            
+        
+
+        marker_75b1fd5fa6ef9f385ed3074bec80cc8b.bindPopup(popup_f22456bc43f800af31c0ee3673bdb65e)
+        ;
+
+        
+    
+    
+            var marker_3597142189eef56a1fa51af378b32e01 = L.marker(
+                [52.207433400000006, 0.1207903],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_9687d2f0ddc40890365127155bcf730d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3597142189eef56a1fa51af378b32e01.setIcon(icon_9687d2f0ddc40890365127155bcf730d);
+        
+    
+        var popup_56c12a6ea678b2ed4921ac98ac2d6546 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddc9d006512684e2c74fb3b9abf187e4 = $(`<div id="html_ddc9d006512684e2c74fb3b9abf187e4" style="width: 100.0%; height: 100.0%;">Sidney Sussex College Cambridge</div>`)[0];
+                popup_56c12a6ea678b2ed4921ac98ac2d6546.setContent(html_ddc9d006512684e2c74fb3b9abf187e4);
+            
+        
+
+        marker_3597142189eef56a1fa51af378b32e01.bindPopup(popup_56c12a6ea678b2ed4921ac98ac2d6546)
+        ;
+
+        
+    
+    
+            var marker_ecaf2f92e9be8c127f78709cd043a663 = L.marker(
+                [52.202877799999996, 0.11747149999999999],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_3ecc57ed6b7acf0733b4b28c3185c1a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ecaf2f92e9be8c127f78709cd043a663.setIcon(icon_3ecc57ed6b7acf0733b4b28c3185c1a0);
+        
+    
+        var popup_6c32bed3e626c3a8d9f40da5292b0771 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f075cffcad38350449ba83f9b7b50cc5 = $(`<div id="html_f075cffcad38350449ba83f9b7b50cc5" style="width: 100.0%; height: 100.0%;">St Catharines College Cambridge</div>`)[0];
+                popup_6c32bed3e626c3a8d9f40da5292b0771.setContent(html_f075cffcad38350449ba83f9b7b50cc5);
+            
+        
+
+        marker_ecaf2f92e9be8c127f78709cd043a663.bindPopup(popup_6c32bed3e626c3a8d9f40da5292b0771)
+        ;
+
+        
+    
+    
+            var marker_68e1bff1376b069e3bc6cf5643fe63b3 = L.marker(
+                [52.2127531, 0.1087819],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_ed64df5cadee96cd6fde59e81eabb07e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_68e1bff1376b069e3bc6cf5643fe63b3.setIcon(icon_ed64df5cadee96cd6fde59e81eabb07e);
+        
+    
+        var popup_e218a159dbbe26c8dfd139e811f049a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56d8463bf2ba4cf83d8a3587c2d72dd0 = $(`<div id="html_56d8463bf2ba4cf83d8a3587c2d72dd0" style="width: 100.0%; height: 100.0%;">St Edmunds College Cambridge</div>`)[0];
+                popup_e218a159dbbe26c8dfd139e811f049a4.setContent(html_56d8463bf2ba4cf83d8a3587c2d72dd0);
+            
+        
+
+        marker_68e1bff1376b069e3bc6cf5643fe63b3.bindPopup(popup_e218a159dbbe26c8dfd139e811f049a4)
+        ;
+
+        
+    
+    
+            var marker_a9dd27be741e9158ee4054bec75e971e = L.marker(
+                [52.2078045, 0.11781300000000001],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_e03c7b576d2604836a49801fd3fded0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a9dd27be741e9158ee4054bec75e971e.setIcon(icon_e03c7b576d2604836a49801fd3fded0f);
+        
+    
+        var popup_4335970f12f74c569648d7b8b2b5333f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_491c5aed2862f051f03f2dae44aeb5bd = $(`<div id="html_491c5aed2862f051f03f2dae44aeb5bd" style="width: 100.0%; height: 100.0%;">St Johns College Cambridge</div>`)[0];
+                popup_4335970f12f74c569648d7b8b2b5333f.setContent(html_491c5aed2862f051f03f2dae44aeb5bd);
+            
+        
+
+        marker_a9dd27be741e9158ee4054bec75e971e.bindPopup(popup_4335970f12f74c569648d7b8b2b5333f)
+        ;
+
+        
+    
+    
+            var marker_c25e0a8f3c11e76600bfa194d876c5a2 = L.marker(
+                [52.2068427, 0.1167531],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_0b5f9c6d9ffb0de448ad1620bdfcc867 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c25e0a8f3c11e76600bfa194d876c5a2.setIcon(icon_0b5f9c6d9ffb0de448ad1620bdfcc867);
+        
+    
+        var popup_a893ddc497b7711c7e3a430cea18a44d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ebb9d41e15a74f38687868c98854ee4d = $(`<div id="html_ebb9d41e15a74f38687868c98854ee4d" style="width: 100.0%; height: 100.0%;">Trinity College Great Court Cambridge</div>`)[0];
+                popup_a893ddc497b7711c7e3a430cea18a44d.setContent(html_ebb9d41e15a74f38687868c98854ee4d);
+            
+        
+
+        marker_c25e0a8f3c11e76600bfa194d876c5a2.bindPopup(popup_a893ddc497b7711c7e3a430cea18a44d)
+        ;
+
+        
+    
+    
+            var marker_0d047e6d3de45e59c183bf82cd58b91e = L.marker(
+                [52.2057386, 0.11513310000000002],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_5b6efa4823d4d47239c390e472f7ea84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0d047e6d3de45e59c183bf82cd58b91e.setIcon(icon_5b6efa4823d4d47239c390e472f7ea84);
+        
+    
+        var popup_6c2ed05e7fbc766693e5be90ea1e65e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dcbed94cd4295d43266cbaee785cbb95 = $(`<div id="html_dcbed94cd4295d43266cbaee785cbb95" style="width: 100.0%; height: 100.0%;">Trinity Hall Cambridge</div>`)[0];
+                popup_6c2ed05e7fbc766693e5be90ea1e65e8.setContent(html_dcbed94cd4295d43266cbaee785cbb95);
+            
+        
+
+        marker_0d047e6d3de45e59c183bf82cd58b91e.bindPopup(popup_6c2ed05e7fbc766693e5be90ea1e65e8)
+        ;
+
+        
+    
+    
+            var marker_64f01cf06fd9ea0253047b8277be7245 = L.marker(
+                [52.198245799999995, 0.100967],
+                {}
+            ).addTo(map_75afdbb25116a76614e74c0a28a45a37);
+        
+    
+            var icon_b9a2b8653693424535dddcaef5c06768 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_64f01cf06fd9ea0253047b8277be7245.setIcon(icon_b9a2b8653693424535dddcaef5c06768);
+        
+    
+        var popup_24d80b1ada6b99969f47e32377f1d331 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bb7273df4fa0ad037602325b6e266e9 = $(`<div id="html_3bb7273df4fa0ad037602325b6e266e9" style="width: 100.0%; height: 100.0%;">Wolfson College Cambridge</div>`)[0];
+                popup_24d80b1ada6b99969f47e32377f1d331.setContent(html_3bb7273df4fa0ad037602325b6e266e9);
+            
+        
+
+        marker_64f01cf06fd9ea0253047b8277be7245.bindPopup(popup_24d80b1ada6b99969f47e32377f1d331)
+        ;
+
+        
+    
+</script>
+</html>
