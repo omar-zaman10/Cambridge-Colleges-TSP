@@ -20,6 +20,6 @@ if __name__ == "__main__":
         geocode = geocode[0]["geometry"]["location"]
         geocodes[college] = (geocode["lat"], geocode["lng"])
 
-    geocodes.to_csv("Data/Geocodes.csv")
+    geocodes.to_csv("data/geocodes.csv")
 
     pprint(geocodes)

@@ -21,8 +21,8 @@ def tsp_cycle(map, perm):
 
 
 if __name__ == "__main__":
-    data = pd.read_csv("Data/Directions.csv")
-    geocodes = pd.read_csv("Data/Geocodes.csv")
+    data = pd.read_csv("data/directions.csv")
+    geocodes = pd.read_csv("data/geocodes.csv")
 
     alternate_route = [
         "Darwin College Cambridge",
@@ -114,5 +114,5 @@ if __name__ == "__main__":
     tsp_cycle(map1, best_route)
     tsp_cycle(map2, alternate_route)
 
-    map1.save("Maps/best_route.html")
-    map2.save("Maps/alternate_route.html")
+    map1.save("maps/best_route.html")
+    map2.save("maps/alternate_route.html")

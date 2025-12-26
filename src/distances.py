@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
     table = pd.DataFrame({"College": colleges})
 
-    geocodes = pd.read_csv("Data/Geocodes.csv")
+    geocodes = pd.read_csv("data/geocodes.csv")
 
     geo_list = []
 
@@ -46,4 +46,4 @@ if __name__ == "__main__":
 
     pprint(table)
 
-    table.to_csv("Data/Distances_table.csv")
+    table.to_csv("data/distances_table.csv")

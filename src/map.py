@@ -13,4 +13,4 @@ if __name__ == '__main__':
         map.add_child(folium.Marker(location=[lat, lng],popup=college,icon=folium.Icon(color='red')))
 
 
-    map.save("Maps/colleges_map.html")
+    map.save("maps/colleges_map.html")

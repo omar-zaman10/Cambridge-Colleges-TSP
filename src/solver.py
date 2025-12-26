@@ -155,7 +155,7 @@ class GeneticAlgorithmSolver:
 
 
 if __name__ == "__main__":
-    data = pd.read_csv("Data/Distances_table.csv")
+    data = pd.read_csv("data/distances_table.csv")
 
     distance_dictionary = {college: {} for college in colleges}
 

@@ -11,7 +11,7 @@ if __name__ == "__main__":
 
     gmaps = googlemaps.Client(key=key)
 
-    geocodes = pd.read_csv("Data/Geocodes.csv")
+    geocodes = pd.read_csv("data/geocodes.csv")
 
     data = {}
 
@@ -43,4 +43,4 @@ if __name__ == "__main__":
     data = pd.DataFrame(data)
     pprint(data)
 
-    data.to_csv("Data/Directions.csv")
+    data.to_csv("data/directions.csv")
