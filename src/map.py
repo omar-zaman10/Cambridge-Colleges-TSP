@@ -6,7 +6,7 @@ if __name__ == '__main__':
     # Map centred from trinity lat long
     map=folium.Map(location=[52.2069577, 0.1130816],zoom_start=13.5) 
 
-    geocodes = pd.read_csv('Data/Geocodes.csv')
+    geocodes = pd.read_csv('data/geocodes.csv')
 
     for college in geocodes:
         lat,lng = geocodes[college]
